@@ -177,5 +177,3 @@ aws cloudformation deploy --template-file cloudformation_templates/deployment_te
 - Integrate OCR for scanned PDF resumes
 - Enhance error handling and retry mechanisms
 
-## 📜 License
-**MIT License** - Open source project. See [LICENSE](LICENSE) for details.
