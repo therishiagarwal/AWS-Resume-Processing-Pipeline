@@ -1,0 +1,12 @@
+# Use AWS Lambda Python base image
+FROM public.ecr.aws/lambda/python:3.11
+
+# Copy and install dependencies
+COPY requirements.txt ./
+RUN pip install -r requirements.txt
+
+# Copy app code
+COPY . .
+
+# Set the handler
+CMD ["main.handler"]
